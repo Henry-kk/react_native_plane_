@@ -16,7 +16,7 @@ export default class App extends PureComponent {
   render() {
     return (
       <View style = {styles.container}>
-        <GameEngiine
+        <GameEngine
           ref = {ref => {
             this.gameEngine = ref;
           }}
@@ -24,7 +24,7 @@ export default class App extends PureComponent {
           entities = {Entities()}
           running = {this.state.running} >
           <StatusBar hidden = {true} />
-        </GameEngiine>
+        </GameEngine>
       </View>
     );
   }

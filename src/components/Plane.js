@@ -1,9 +1,9 @@
-import React from 'ract';
-import { Image } from 'raect-native';
+import React from 'react';
+import { Image } from 'react-native';
 import { array, object, string } from 'prop-types';
 import Matter from 'matter-js';
 
-const airplane = require('../../assets/airplane.png');
+const airplane = require('../../assets/Plane.png');
 
 const Plane = props => {
   const width = props.size[0];
