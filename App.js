@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { StatusBar, StyleSheet, View } from 'react-native';
 import Entities from'./src/entities';
 import {GameEngine} from 'react-native-game-engine';
-
+import Systems from './src/systems';
 export default class App extends PureComponent {
   constructor(props) {
     super(props);
@@ -21,6 +21,7 @@ export default class App extends PureComponent {
             this.gameEngine = ref;
           }}
           style = {styles.gameContainer}
+          systems = {Systems}
           entities = {Entities()}
           running = {this.state.running} >
           <StatusBar hidden = {true} />
